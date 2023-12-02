@@ -1,0 +1,636 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<!-- Mirrored from haldaiva.github.io/KerjaKita/profil.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Oct 2023 13:12:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <title>Profil</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="navlog.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <meta name="theme-color" content="#fafafa">
+
+
+
+  <style>
+    .accordion-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .accordion-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      gap: 0px;
+
+    }
+
+    .logout {
+      position: absolute;
+      /*right: 0;*/
+      top: -60px;
+      color: #710000 !important;
+      background-color: #437C90;
+      z-index: 200;
+      /*display: inline-block;*/
+    }
+
+    .footin {
+      position: relative;
+    }
+
+    .accordion-wrapper2 {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      gap: 0px;
+      margin-bottom: 100px;
+
+    }
+    .accordion {
+      color: white !important;
+    }
+
+    .accordion {
+      background-color: #b16b74;
+      color: #444;
+
+      padding: 18px;
+      text-align: left;
+      border: none;
+      border-radius: 10px 10px 0px 0px;
+      outline: none;
+      transition: 0.4s;
+      color: #710000
+    }
+
+    /* .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 18px;
+      background-color: #eee;
+      border-radius: 0px 0px 10px 10px;
+      transition: max-height 0.4s;
+      margin-bottom: 10px;
+      color: #710000
+    } */
+    .accordion-content {
+      max-height: auto;
+      overflow: hidden;
+      padding: 0 18px;
+      background-color: #eee;
+      border-radius: 0px 0px 10px 10px;
+      transition: max-height 0.4s;
+      margin-bottom: 10px;
+      color: #710000;
+    }
+
+    .footer h1, .footer p {
+      color: white;
+    }
+
+
+    .active {
+      background-color: #b16b74;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .active+.accordion-content {
+      max-height: auto;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 1100px) {
+      .accordion-wrapper {
+        flex-basis: 100%;
+        padding-left: 10%;
+        margin-right: 10px;
+        padding-right: 5%;
+
+
+      }
+
+      .accordion-wrapper2 {
+        flex-basis: 100%;
+        padding-left: 10%;
+        margin-right: 10px;
+
+        padding-right: 5%;
+
+      }
+
+      /* .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 18px;
+      background-color: #eee;
+      border-radius: 0px 0px 10px 10px;
+      transition: max-height 0.4s;
+      margin-bottom: 10px;
+      color: #710000
+    } */
+    }
+
+
+    @media screen and (min-width: 1101px) {
+
+      .accordion-container {
+        flex-wrap: nowrap;
+
+      }
+
+      .accordion-wrapper {
+        flex-basis: 100%;
+        padding-left: 10%;
+        margin-right: 10px;
+
+
+
+
+      }
+
+      .accordion-wrapper2 {
+        flex-basis: 100%;
+        padding-right: 10%;
+
+      }
+    }
+
+
+
+
+
+    .box {
+    width: 100px;
+    height: 30px;
+      border-radius: 50px;
+      color: white;
+    background-color: #589eb9;
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+
+
+  }
+  .box:hover{
+    cursor:pointer;
+  }
+
+  .box2 {
+    width: 100px;
+    height: 30px;
+    background-color: #589eb9;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 0;
+    float: right;
+    margin-top: -70px;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .box2:hover{
+    cursor:pointer;
+  }
+
+  @media (max-width: 500px) {
+    .box,
+    .box2 {
+      float: none;
+      margin: 20px auto;
+    }
+  }
+
+
+
+
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: flex-start;
+      /* Added to align items to the top */
+      padding-left: 10%;
+    }
+
+    .container>div {
+      width: 100%;
+      max-width: 500px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    .container form {
+      margin-bottom: 0;
+    }
+
+    h1 {
+
+      color: #710000;
+      text-align: left;
+      margin-top: 0;
+      /* Added to remove default margin */
+    }
+
+    h2 {
+      color: #710000;
+      margin-top: 50px;
+    }
+
+    p {
+      color: #710000;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #710000;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #710000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #600000;
+    }
+
+    @media screen and (max-width: 1100px) {
+      .container {
+        justify-content: space-between;
+        align-items: flex-start;
+        /* Added to align items to the top */
+      }
+
+      .container>div {
+        width: 90%;
+        max-width: initial;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="top">
+    <nav>
+      <a href="homeIn.html"><img class="logo" src="img/logo.png" alt="logo" height="30px"></a>
+      <ul id="unlist">
+        <li><a class="lowongan" href="Cari_LowonganIn.html">Cari Lowongan</a></li>
+        <li><a href="PelatihanIn.html">Pelatihan</a></li>
+        <li><a href="artikelIn.html">Artikel</a></li>
+        <li><a href="homeIn.html#aboutUs">Tentang Kami</a></li>
+        <li><a href="HubungiKamiIn.html">Tanya Jawab</a></li>
+<!--        <li class="profilImage"><a href="#"><img src="img/profile.png" alt="profile" width="35px" style="margin-top: -10px"></a></li>-->
+        <li class="login"><a href="index.html">Log Out</a></li>
+  <!--      <li class="daftar"><a href="#">Daftar Sekarang</a></li>-->
+      </ul>
+      <button class="hamburger" onclick="expand()"><span class="material-symbols-outlined">menu</span></button>
+    </nav>
+  </div>
+
+
+  <div style="padding-top: 15%; " class="accordion-container">
+    <div class="accordion-wrapper">
+      <div class="accordion">
+        <a href="biodata.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+          Biodata
+      </div>
+      <div class="accordion-content">
+        <div style="margin-bottom: 0px;text-align: center;">
+          <div style="width: auto; height: auto;
+          background-color: gray;
+          padding: 20px;
+          background-color: #eee;
+          border-radius: 5px;
+          border: solid 5px;
+          border-color: #710000;
+          margin: 10px;">
+
+            <div >
+              <img style="width: 90px; height: 90px;" src="img/profile.png" alt="logo" height="30px">
+            </div>
+            <div style="">
+              <b>Eko Saputra</b>
+              <br>
+              ekosaputra@gmail.com | 081358954871
+              <br>
+              <br>
+              Malang, Jawa Timur
+              <br>
+              Laki-laki
+              <br>
+              02-04-1996
+              <br>
+              Tuna Daksa
+
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+</div>
+
+      <div class="accordion">
+        <a href="Ringkasan.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+        Ringkasan Pribadi
+      </div>
+      <div class="accordion-content">
+        <p>Saya adalah seorang content writer  dengan disabilitas tuna daksa (cacat kaki). Meskipun memiliki keterbatasan fisik dan harus memakai kursi roda, kreativitas dan semangat menulis saya tidak akan terbatas. 
+          Saya memiliki keahlian dalam menghasilkan konten yang informatif, menarik, dan relevan untuk berbagai jenis audiens. </p>
+      </div>
+
+      <div class="accordion">
+        <a href="RiwayatPekerjaan.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+          Riwayat Pekerjaan
+      </div>
+      <div class="accordion-content">
+        <div style="margin-bottom: 10px;">
+          <div style="float:left;margin-top: 10px; margin-bottom: 10px;">
+            <div style="margin-bottom: 10px;">
+              November 2016 - Maret 2017
+              <br>
+              <b>Contet Writer</b>
+              <br>
+              Rumah Sandar | Jakarta
+            </div>
+            <div style="margin-bottom: 10px;">
+              Juni 2017 - Januari 2019
+              <br>
+              <b>Freelance Content Writer</b>
+              <br>
+              Media dan Informasi | Yogyakarta
+            </div>
+            <div style="margin-bottom: 10px;">
+              Februari 2019 - April 2023
+              <br>
+              <b>Creative Writer</b>
+              <br>
+              Student Preneurs | Depok
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="accordion-wrapper2">
+      <div class="accordion">
+        <a href="RiwayatPendidikan.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+          Riwayat Pendidikan & Pelatihan
+      </div>
+      <div class="accordion-content">
+        <div style="margin-bottom: 10px;">
+          <div style="float:left;margin-top: 10px; margin-bottom: 10px;">
+            <div style="margin-bottom: 10px;">
+              Pendidikan tertinggi
+              <br>
+              <b>S1-Pendidikan Ilmu Komunikasi</b>
+              <br>
+              Universistas Negeri Malang
+            </div>
+
+            <div style="margin-bottom: 10px;">
+              Pelatihan
+              <br>
+              <b>"Strategi Mengubah Ide Menjadi Tulisan"</b>
+              <br>
+              Gedung Kreativitas Mahasiswa | Universitas Brawijaya
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="accordion">
+        <a href="RiwayatKeterampilan.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+          Keterampilan & Sertifikasi
+
+      </div>
+      <div class="accordion-content">
+        <div style="margin-bottom: 10px;">
+          <div style="float:left;margin-top: 10px; margin-bottom: 10px;">
+            <div style="margin-bottom: 10px;">
+              November 2016 - Maret 2017
+              <br>
+              <b>WebDev Academy</b>
+              <br>
+              Universistas Brawijaya
+            </div>
+            <div style="margin-bottom: 10px;">
+              Oktober 2017 - Desember 2017
+              <br>
+              <b>Hacktive8 Coding Bootcamp</b>
+              <br>
+              Hacktive8
+            </div>
+            <div style="margin-bottom: 10px;">
+              Februari 2019 - April 2023
+              <br>
+              <b>Glints Academy</b>
+              <br>
+              Glints
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="accordion">
+        <a href="LamaranDikirim.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+          Lamaran Dikirim
+      </div>
+      <div class="accordion-content">
+        <div style="margin-bottom: 0px;">
+          <div style="width: auto; height: autopx;
+          background-color: #eee;
+          border-radius: 5px;
+          border: solid 5px;
+          border-color: #710000;
+
+          padding: 20px;
+          margin: 10px;">
+          <img style="width: 90px; height: 90px; " src="../../images.glints.com/unsafe/160x0/glints-dashboard.s3.amazonaws.com/company-logo/4752b504910e5f6716089fe22640abd0.png" alt="logo"
+          height="30px">
+
+            <!-- <div >
+              <img style="width: 90px; height: 90px;" src="https://images.glints.com/unsafe/160x0/glints-dashboard.s3.amazonaws.com/company-logo/4752b504910e5f6716089fe22640abd0.png" alt="logo" height="30px">
+            </div> -->
+            <div style="margin-left: 100px; margin-top: -80px;margin-bottom:20px">
+              <b>Accout Manager</b>
+              <br>
+              NOKA - NOU Creative Group.
+
+              <br>
+              27 Mei 2023
+
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+      <div class="accordion">
+        <a href="CV.html"><img style="width: 20px; height: 20px; float:right" src="pen_square_icon_159935.png" alt="logo" >
+        </a>
+          Curriculum Vitae
+      </div>
+      <div class="accordion-content">
+
+        <div class="box"><div style="margin-top: 5px;">Resume</div></div>
+        <div class="box2"><div style="margin-top: 5px;">CV</div></div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script>
+    function expand() {
+      if (document.getElementById("unlist").style.display == "none" || document.getElementById("unlist").style.display == "") {
+        document.getElementById("unlist").style.display = "block";
+      } else {
+        document.getElementById("unlist").style.display = "none";
+      }
+    }
+  </script>
+
+
+
+  <script>
+    var accordions = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+
+
+</body>
+
+<body>
+
+
+
+<div class="footer">
+  <div class="footin">
+    <div class="footlogo">
+      <img src="img/kerjakitaWhite.png" alt="logo" height="30px">
+      <p>Follow us on</p>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+
+    <div class="cs contact">
+      <h1>Layanan Contact Center</h1>
+      <p>081234567890 <br>kerjakita.dev@gmail.com <br> <a href="HubungiKamiIn.html#support">Customer Support</a></p>
+      <p>Jam operasional: 08.00 - 17.00</p>
+    </div>
+
+    <div class="cs peserta">
+      <h1>Akun</h1>
+      <p><a href="login.html">Masuk</a><br><a href="register.html">Daftar</a><br> <a href="profil.html">Profil</a></p>
+    </div>
+
+    <div class="cs pelatihan">
+      <h1>Konten</h1>
+      <p><a href="homeIn.html">Beranda</a><br><a href="Cari_LowonganIn.html">Cari Lowongan</a><br><a href="PelatihanIn.html">Pelatihan</a><br> <a href="artikelIn.html">Artikel</a></p>
+    </div>
+
+    <div class="cs pertanyaan">
+      <h1>Tanya</h1>
+      <p><a href="HubungiKamiIn.html">Tanya jawab</a><br><a href="homeIn.html#aboutUs">Tentang kami</a></p>
+    </div>
+  </div>
+
+  <div class="footest">
+    <hr>
+    <span>© KerjaKita 2023</span>
+    <span style="float: right"><a href="#">Kebijakan</a></span>
+  </div>
+
+</div>
+  <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "EwDR8hXJ6Z");s.setAttribute("src", "../../cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org/">website accessibility</a></noscript>
+</body>
+
+
+<!-- Mirrored from haldaiva.github.io/KerjaKita/profil.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Oct 2023 13:12:51 GMT -->
+</html>

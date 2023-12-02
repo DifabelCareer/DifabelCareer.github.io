@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from haldaiva.github.io/KerjaKita/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Oct 2023 13:12:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>Login</title>
+   <script src="../../www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <script src="../../www.google.com/recaptcha/enterpriseac70.js?render=6LdmUqImAAAAAHnJtCzXXvlVj1Cz6_9oPrkc1ZxV"></script>
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+  <h1>Masuk Akun</h1>
+  <p id="txt2">Buat kamu yang sudah terdaftar, silakan masuk ke akunmu.</p>
+
+  <form>
+    <label for="username"></label>
+    <input type="email" placeholder="Alamat E-mail" id="username" name="username" required>
+
+    <label for="password"></label>
+    <input type="password" placeholder="Password" id="password" name="password" required>
+    <input id="login" type="submit" value="Login" onclick="redirectToPage()">
+
+  </form>
+  <a style="text-decoration:none" id="lupa" href="https://google.com/"> Lupa password? </a>
+  <input type="checkbox" id="ingat" name="ingat" value="ingat">
+  <label for="ingat" id="ingat"> Ingat saya</label>
+  <hr>
+  <p>Belum punya akun? <a style="text-decoration:none" id="daftar" href="register.html"> Daftarkan dirimu
+  </a></p>
+
+
+
+
+</div>
+
+<script>
+  function redirectToPage() {
+    event.preventDefault();
+    // Perform any necessary login logic here
+
+    // Redirect the user to the desired page
+    window.location.href = "homeIn.html";
+  }
+</script>
+
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LdmUqImAAAAAHnJtCzXXvlVj1Cz6_9oPrkc1ZxV', {action: 'LOGIN'});
+      // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+      // reCAPTCHA Enterprise to the end user's browser.
+      // This token must be validated by creating an assessment.
+      // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+    });
+  }
+</script>
+<script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "EwDR8hXJ6Z");s.setAttribute("src", "../../cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script><noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org/">website accessibility</a></noscript>
+
+</body>
+
+
+<!-- Mirrored from haldaiva.github.io/KerjaKita/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Oct 2023 13:12:19 GMT -->
+</html>
